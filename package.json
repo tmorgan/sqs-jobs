@@ -1,0 +1,24 @@
+{
+  "name": "sqs-jobs",
+  "version": "1.0.0",
+  "description": "Simple library for job management on Amazon SQS",
+  "main": "queue.js",
+  "scripts": {
+    "test": "node test.js",
+    "lint": "jshint .",
+    "style": "jscs .",
+    "validate": "npm ls"
+  },
+  "author": "Tony Morgan",
+  "license": "MIT",
+  "pre-commit": [
+    "lint",
+    "style",
+    "validate",
+    "test"
+  ],
+  "dependencies": {
+    "aws-sdk": "^2.2.13",
+    "precommit-hook": "^3.0.0"
+  }
+}
