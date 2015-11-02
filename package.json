@@ -10,6 +10,7 @@
     "validate": "npm ls"
   },
   "author": "Tony Morgan",
+  "homepage" : "https://github.com/tmorgan/sqs-jobs",
   "license": "MIT",
   "pre-commit": [
     "lint",

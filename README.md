@@ -1,6 +1,6 @@
 ## An SQS Job management library
 
-This library provides a simple way to poll SQS for messages and run handlers against them. Queues get implicitly created for convinence (this is one of the USPs here, as well as fine grained control over the udnerlaying sqs options and simple interface).  Messages are serialised to/from JSON. The handlers follow the standard node convention when calling their callback, and if the first argument is non-null then an error is considered to have occurred in the message's handling, and it is subsequently not deleted from the job queue.
+This library provides a simple way to poll SQS for messages and run handlers against them. Queues get implicitly created for convinence. Messages are serialised to/from JSON. Optionally pass the underlaying sqs options controlling visibility and wait time. The handlers follow the standard node convention when calling their callback, and if the first argument is non-null then an error is considered to have occurred in the message's handling, and it is subsequently not deleted from the job queue.
 
 ### Example:
 
@@ -33,6 +33,7 @@ This library provides a simple way to poll SQS for messages and run handlers aga
     });
 
 the `on` and `get` take an optional third argument containing the underlaying sqs options, defaulting to:
+
     {MaxNumberOfMessages : 1, WaitTimeSeconds : 5, VisibilityTimeout  : 300}
 
 
