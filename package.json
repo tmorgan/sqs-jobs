@@ -1,6 +1,6 @@
 {
   "name": "sqs-jobs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple library for job management on Amazon SQS",
   "main": "queue.js",
   "scripts": {
