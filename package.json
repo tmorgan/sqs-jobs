@@ -5,12 +5,16 @@
   "main": "queue.js",
   "scripts": {
     "test": "node test.js",
-    "lint": "jshint .",
-    "style": "jscs .",
+    "lint": "jshint *.js",
+    "style": "jscs *.js",
     "validate": "npm ls"
   },
   "author": "Tony Morgan",
   "homepage" : "https://github.com/tmorgan/sqs-jobs",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/tmorgan/sqs-job"
+    },
   "license": "MIT",
   "pre-commit": [
     "lint",
