@@ -41,4 +41,9 @@ the `on` and `get` take an optional third argument containing the underlaying sq
 
 Region is set to 'us-east-1' or the environment AWS_REGION if set, and aws keys are expected in environment variables as per aws-sdk docs.
 
-git precommit-hook runs jslint and jscs with to enforce style.
+
+### Contributing
+
+`npm install precommit-hook`
+
+That will enforce jslint and jscs with the definitions in .jscs and .jshint, or just remember to run them manually if you want.

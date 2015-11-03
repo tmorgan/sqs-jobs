@@ -1,5 +1,5 @@
 var AWS = require('aws-sdk');
-if (process.env.AWS_REGION) AWS.config.update({region: 'us-east-1'});
+if (process.env.AWS_REGION) AWS.config.update({region: process.env.AWS_REGION});
 else AWS.config.update({region: 'us-east-1'});
 var QUEUES = {};
 
